@@ -9,14 +9,16 @@
 <body> 
     <header>
         <h1>Dashboard de Tareas</h1>
-        <button id="btn-theme">Cambiar Modo</button>
+        <button id="btn-tema">Cambiar Modo</button>
     </header>
 
-    <main class="container">
+    <main class="contenedor">
         <section>
             <form id="form-tarea">
                 <input id="input-tarea" type="text" placeholder="Escribe una nueva tarea...">
-                <button id="btn-add" type="submit">Añadir</button>
+                <input id="input-fecha" type="date">
+                <button id="btn-añadir" type="submit">Añadir</button>
+               
             </form>
         </section>
         <section>
@@ -28,7 +30,7 @@
     </main>
 
     <footer>
-         <p id="stats">Tareas completadas: 0 de 0</p>
+         <p id="estadisticas">Tareas completadas: 0 de 0</p>
     </footer>
     
     <script src="script.js"></script>

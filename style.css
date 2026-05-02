@@ -13,7 +13,7 @@ body{
     padding: 20px;
 }
 
-.container{
+.contenedor{
     background-color: #ffffff;
     max-width: 600px;
     padding: 18px;
@@ -38,7 +38,7 @@ h1{
     color: #333;
 }
 
-#btn-theme{
+#btn-tema{
     padding: 8px 12px;
     background-color: #333;
     color: wheat;
@@ -54,13 +54,16 @@ h1{
   
     
 }
-#input-tarea{
-    flex-grow: 1;
+#input-tarea, #input-fecha{
     padding: 10px;
     border-radius: 18px;
+    border: 1px solid #ddd;
     
 }
-#btn-add{
+#input-tarea{
+    flex-grow: 1;
+}
+#btn-añadir{
     padding: 8px 16px;
     border-radius: 18px;
     color: white;
@@ -69,7 +72,7 @@ h1{
     border: none;
     background-color: #4caf50;
 }
-#btn-add:hover{
+#btn-añadir:hover{
     background-color: #45a049;
     
 }
