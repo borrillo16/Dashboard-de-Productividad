@@ -11,6 +11,21 @@ body{
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+#lista-tareas button {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lista-tareas button:hover {
+    background-color: #d32f2f;
 }
 
 .contenedor{
@@ -85,4 +100,32 @@ h1{
     align-items: center;
     padding: 10px 5px;
     border-bottom: 1px solid #eee;
+}
+/* --- MODO OSCURO --- */
+
+/* 1. Fondo del cuerpo */
+body.oscuro {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* 2. El contenedor CAMBIA solo cuando el body es oscuro */
+body.oscuro .contenedor {
+    background-color: #2d2d2d;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 3. Forzamos que los textos de la lista sean blancos */
+body.oscuro #lista-tareas li span,
+body.oscuro #lista-tareas li small,
+body.oscuro h1 {
+    color: white !important;
+}
+
+/* 4. Opcional: que los inputs no se vean raros */
+body.oscuro input {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
 }

@@ -35,9 +35,12 @@ function crearElemento(texto, fecha){
     boton.textContent ="Eliminar";
     boton.onclick = function() {
         li.remove();
+       actualizarContador();
     }
     lista.appendChild(li);
     li.appendChild(boton);
+    actualizarContador();
+   
 
 };
 
@@ -45,3 +48,13 @@ function crearElemento(texto, fecha){
 function capitalizar(texto){
     return texto.charAt(0).toUpperCase() + texto.slice(1);
 };
+
+function actualizarContador() {
+    const numeroTareas = lista.children.length;
+    estadisticas.textContent = `Tareas pendientes: ${numeroTareas}`;
+
+};
+btnModo.addEventListener("click", () => {
+       document.body.classList.toggle("oscuro");
+});
+actualizarContador();
