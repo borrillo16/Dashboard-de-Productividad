@@ -47,3 +47,39 @@ h1{
     cursor: pointer;
     font-size: 0.8rem;
 }
+#form-tarea{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  
+    
+}
+#input-tarea{
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 18px;
+    
+}
+#btn-add{
+    padding: 8px 16px;
+    border-radius: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: #4caf50;
+}
+#btn-add:hover{
+    background-color: #45a049;
+    
+}
+#lista-tareas{
+    list-style: none;
+}
+#lista-tareas li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #eee;
+}
